@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+    {% extends 'layouts/base.html' %}
+
+    {% load static %}
+
+    {% block content %}
+
+    <h1>Welcome to Django App</h1>
+    <h2>{{title}}</h2>
+
+    <img src="{% static 'wolf.png' %}" alt="lobo" width="70">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatibus aliquam ab facilis quae tempora maxime voluptates cupiditate atque unde non sunt repellendus, officia, aliquid rem laudantium animi numquam qui?</p>
+
+    {% endblock %}
+</body>
+</html>
